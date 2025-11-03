@@ -69,7 +69,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center mb-8 md:mb-12 px-4">
           <Button 
             className="bg-primary text-primary-foreground hover:bg-primary/90 glow transition-all w-full sm:w-auto"
-            onClick={() => window.open('/cv.pdf', '_blank')}
+            onClick={() => window.open('/SKS Resume.pdf', '_blank')}
           >
             <Download className="mr-2 h-4 w-4" />
             Download CV
