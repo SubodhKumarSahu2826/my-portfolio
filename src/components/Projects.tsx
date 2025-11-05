@@ -1,79 +1,110 @@
+
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 
+// ✅ CHANGE #1: Added handler functions for button clicks
 const Projects = () => {
+  // ✅ CHANGE #1a: Handler for Live Demo button - opens in new tab
+  const handleLiveDemo = (url) => {
+    if (url) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  // ✅ CHANGE #1b: Handler for GitHub Code button - opens in new tab
+  const handleGithub = (url) => {
+    if (url) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  // ✅ CHANGE #2: Added liveDemo and github URLs to each project
   const projects = [
     {
       title: 'Job Application Portal Redesign',
       description:
         'Streamlined job applications with dynamic filtering and resume analytics for enhanced user experience.',
       tech: ['React', 'Node.js', 'MongoDB'],
-      gradient: 'from-primary to-purple-600',
-      thumbnail: '💼',
+      thumbnail: '/Projects Images/job-application-portal.jpeg',
+      // ✅ CHANGE #2a: Added live demo URL (set to null if no live demo available)
+      liveDemo: null,
+      // ✅ CHANGE #2b: Added GitHub repository URL
+      github: 'https://github.com/SubodhKumarSahu2826/Job-Application-Portal.git',
     },
     {
       title: 'Web3 Crowdfunding Application',
       description:
         'Decentralized platform ensuring transparent and secure fund management using blockchain technology.',
       tech: ['React', 'Solidity', 'Web3.js'],
-      gradient: 'from-accent to-primary',
-      thumbnail: '⛓️',
+      thumbnail: '/Projects Images/web3-crowdfunding.png',
+      liveDemo: null,
+      github: 'https://github.com/SubodhKumarSahu2826/Crowdfunding-using-Smart-Contract.git',
     },
     {
-      title: 'Chatbot Ticket Booking for Museums',
+      title: 'Beats 3 Head Phone Landing Page',
       description:
-        'AI-based multilingual assistant providing smart visitor experience with natural language processing.',
-      tech: ['Python', 'TensorFlow', 'React'],
-      gradient: 'from-purple-600 to-accent',
-      thumbnail: '🤖',
+        'Responsive product landing page featuring smooth animations, product overview, pricing integration, and optimized user experience across all devices.',
+      tech: ['React', 'CSS', 'JavaScript'],
+      thumbnail: '/Projects Images/HeadPhone Landing Page.png',
+      liveDemo: 'https://beats-headphone-landing-page.vercel.app/',
+      github: 'https://github.com/SubodhKumarSahu2826/Beats-Headphone-Landing-Page.git',
     },
     {
       title: 'AI-Based Adaptive Cyber Honeypot',
       description:
         'Dynamic threat detection system through AI-driven deception networks for enhanced cybersecurity.',
       tech: ['Python', 'ML', 'Docker'],
-      gradient: 'from-primary to-accent',
-      thumbnail: '🔒',
+      thumbnail: '/Projects Images/CyberHoney-Pot.png',
+      liveDemo: 'null',
+      github: 'https://github.com/SubodhKumarSahu2826/AI_Adaptive-cyber_honeypot.git',
     },
     {
-      title: 'E-Commerce Analytics Dashboard',
+      title: 'Kinova Bionic Hand Control System',
       description:
-        'Real-time analytics platform with interactive visualizations for tracking sales, inventory, and customer insights.',
-      tech: ['React', 'TypeScript', 'Chart.js'],
-      gradient: 'from-accent to-purple-600',
-      thumbnail: '📊',
+        'Real-time bionic hand control system for Kinova robotic arms with UART communication bridge and Kortex API integration.',
+      tech: ['Python', 'Kortex API', 'UART', 'TCP/UDP'],
+      thumbnail: '/Projects Images/Kinova Bionic Hand Control System.png',
+      // ✅ CHANGE #2c: Set to null because it's a hardware project with no live demo
+      liveDemo: null,
+      github: 'https://github.com/SubodhKumarSahu2826/kinova-bionic-hand-control.git',
     },
     {
-      title: 'Social Media Management Tool',
+      title: 'Face Recognition Attendance Management System',
       description:
-        'Centralized platform for scheduling posts, analyzing engagement metrics, and managing multiple social accounts.',
-      tech: ['Next.js', 'PostgreSQL', 'Redis'],
-      gradient: 'from-purple-600 to-primary',
-      thumbnail: '📱',
+        'Intelligent attendance management system leveraging OpenCV for automated facial recognition, real-time tracking, performance analytics, and detailed attendance reports.',
+      tech: ['Python', 'OpenCV', 'Flask', 'Database'],
+      thumbnail: '/Projects Images/face recognition attendence management system.png',
+      liveDemo: 'https://face-recognition-attendance.herokuapp.com',
+      github: 'https://github.com/SubodhKumarSahu2826/Attendance-Management-System.git',
     },
     {
-      title: 'Healthcare Management System',
+      title: 'Electricity Billing System',
       description:
-        'Comprehensive patient management platform with appointment scheduling, medical records, and telemedicine integration.',
-      tech: ['React', 'Node.js', 'PostgreSQL'],
-      gradient: 'from-primary to-accent',
-      thumbnail: '🏥',
+        'Full-featured billing platform for utilities management including customer administration, consumption tracking, automated invoice generation, and secure payment handling.',
+      tech: ['Java', 'SQL', 'GUI'],
+      thumbnail: '/Projects Images/electricity billing system.png',
+      // ✅ CHANGE #2d: Set to null because it's a desktop application with no web hosting
+      liveDemo: null,
+      github: 'https://github.com/yourusername/electricity-billing-system',
     },
     {
-      title: 'AI-Powered Content Generator',
+      title: 'Drug Research Platform',
       description:
-        'Advanced content creation tool leveraging machine learning for automated blog posts, social media content, and marketing copy.',
-      tech: ['Python', 'GPT-4', 'FastAPI'],
-      gradient: 'from-accent to-purple-600',
-      thumbnail: '✍️',
+        'AI-powered platform for protein structure prediction and drug-binding analysis using NVIDIA machine learning models.',
+      tech: ['TypeScript', 'NVIDIA-NIM', 'MongoDB', 'TailwindCSS', 'Next.js'],
+      thumbnail: '/Projects Images/Protein-Bind.png',
+      liveDemo: 'https://protein-bind.vercel.app',
+      github: 'https://github.com/SubodhKumarSahu2826/Drug-Research-Platform.git',
     },
     {
-      title: 'Smart Home IoT Dashboard',
+      title: 'TextSavvy - Web Accessibility Extension',
       description:
-        'Unified control panel for managing smart home devices with real-time monitoring, automation rules, and energy tracking.',
-      tech: ['React', 'MQTT', 'IoT'],
-      gradient: 'from-purple-600 to-primary',
-      thumbnail: '🏠',
+        'Chrome extension empowering web accessibility with text modification, dyslexia-friendly fonts, text-to-speech, colorblind mode, and real-time page translation for inclusive browsing experience.',
+      tech: ['JavaScript', 'Chrome API', 'HTML', 'CSS'],
+      thumbnail: '/Projects Images/text-savvy.png',
+      // ✅ CHANGE #2e: Link to Chrome Web Store instead of regular deployment
+      liveDemo: 'https://chrome.google.com/webstore/detail/textsavvy',
+      github: 'https://github.com/yourusername/textsavvy',
     },
   ];
 
@@ -91,12 +122,15 @@ const Projects = () => {
               className="bg-card rounded-lg border border-border hover:border-glow transition-all duration-300 overflow-hidden group animate-fade-in"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
-              <div className={`relative h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
-                <span className="text-8xl group-hover:scale-110 transition-transform duration-300">
-                  {project.thumbnail}
-                </span>
+              {/* Image Section */}
+              <div className="relative h-48 bg-muted overflow-hidden">
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              
+
               <div className="p-4 md:p-6">
                 <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-3 group-hover:text-primary transition-colors line-clamp-2">
                   {project.title}
@@ -116,19 +150,30 @@ const Projects = () => {
                   ))}
                 </div>
 
+                {/* ✅ CHANGE #3: Updated Buttons Section - Added onClick handlers and conditional rendering */}
                 <div className="flex flex-col sm:flex-row gap-2 md:gap-4">
+                  {/* ✅ CHANGE #3a: Live Demo Button - Shows "Live Demo" if available, "No Demo" if null */}
                   <Button
+                    onClick={() => handleLiveDemo(project.liveDemo)}
+                    disabled={!project.liveDemo}
                     variant="outline"
                     size="sm"
-                    className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto text-xs md:text-sm"
+                    className={`w-full sm:w-auto text-xs md:text-sm transition-all ${
+                      project.liveDemo
+                        ? 'border-primary text-primary hover:bg-primary/10 cursor-pointer'
+                        : 'border-gray-500 text-gray-500 cursor-not-allowed opacity-50'
+                    }`}
                   >
                     <ExternalLink className="mr-2 h-3 w-3 md:h-4 md:w-4" />
-                    Live Demo
+                    {project.liveDemo ? 'Live Demo' : 'No Demo'}
                   </Button>
+
+                  {/* ✅ CHANGE #3b: GitHub Code Button - Added onClick handler to open GitHub repo */}
                   <Button
+                    onClick={() => handleGithub(project.github)}
                     variant="outline"
                     size="sm"
-                    className="border-border hover:border-glow w-full sm:w-auto text-xs md:text-sm"
+                    className="border-border hover:border-glow w-full sm:w-auto text-xs md:text-sm cursor-pointer"
                   >
                     <Github className="mr-2 h-3 w-3 md:h-4 md:w-4" />
                     Code
