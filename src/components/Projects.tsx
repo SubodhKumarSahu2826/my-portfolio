@@ -104,7 +104,7 @@ const Projects = () => {
       thumbnail: '/Projects Images/text-savvy.png',
       // ✅ CHANGE #2e: Link to Chrome Web Store instead of regular deployment
       liveDemo: 'https://chrome.google.com/webstore/detail/textsavvy',
-      github: 'https://github.com/yourusername/textsavvy',
+      github: 'git@github.com:SubodhKumarSahu2826/textsavvy-extension.git',
     },
   ];
 
