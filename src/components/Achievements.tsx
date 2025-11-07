@@ -3,6 +3,12 @@ import { Award, FileCheck, Star } from 'lucide-react';
 const Achievements = () => {
   const achievements = [
     {
+      icon: Star,
+      title: 'BARC Internship',
+      description: 'Developed Software for Kinova bionic arm using Kortex API in C++ and Python',
+      year: '2024',
+    },
+    {
       icon: Award,
       title: 'Google Cloud Certified',
       description: 'Associate Cloud Engineer',
@@ -13,12 +19,6 @@ const Achievements = () => {
       title: 'DevOps Fundamentals',
       description: 'Linux Foundation',
       year: '2023',
-    },
-    {
-      icon: Star,
-      title: 'BARC Internship',
-      description: 'Developed Software for Kinova bionic arm using Kortex API in C++ and Python',
-      year: '2024',
     },
   ];
 
