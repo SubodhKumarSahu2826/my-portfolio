@@ -39,7 +39,7 @@ const About = () => {
               </div>
               <div className="flex-1">
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  I'm a third-year Computer Engineering student at{' '}
+                  I'm a Final-year Computer Engineering student at{' '}
                   <span className="text-primary font-semibold">Terna Engineering College</span>, driven by a passion for building scalable, secure, and intelligent digital systems that make a real impact.
                 </p>
               </div>
