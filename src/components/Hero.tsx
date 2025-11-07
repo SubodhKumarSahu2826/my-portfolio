@@ -110,7 +110,7 @@ const Hero = () => {
             <XIcon className="h-6 w-6" />
           </a>
           <a
-            href="mailto:subodh@example.com"
+            href="mailto:subodhkumarsahu.dev@gmail.com"
             className="p-3 rounded-full border border-border hover:border-glow transition-all hover:scale-110"
           >
             <Mail className="h-6 w-6" />
