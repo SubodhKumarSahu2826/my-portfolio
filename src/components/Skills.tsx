@@ -20,6 +20,7 @@ const Skills = () => {
         { name: 'React', icon: Braces, level: 90 },
         { name: 'Node.js', icon: Server, level: 85 },
         { name: 'Express', icon: Terminal, level: 85 },
+        { name: 'Typescript', icon: Terminal, level: 80 },
       ]
     },
     {
@@ -41,7 +42,7 @@ const Skills = () => {
         { name: 'TensorFlow', icon: Brain, level: 80 },
         { name: 'Scikit-learn', icon: Cpu, level: 85 },
         { name: 'PyTorch', icon: Brain, level: 75 },
-        { name: 'Keras', icon: Cpu, level: 82 },
+        { name: 'LLM', icon: Cpu, level: 82 },
       ]
     },
     {
