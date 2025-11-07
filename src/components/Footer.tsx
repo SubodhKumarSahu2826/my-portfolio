@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, TrendingUp, Rocket, Sparkle, Star, Cpu, Zap, Code, Cog } from 'lucide-react';
 import XIcon from '@/components/ui/x-icon';
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
               <XIcon className="h-6 w-6" />
             </a>
             <a
-              href="mailto:subodh@example.com"
+              href="mailto:subodhkumarsahu.dev@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />
@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
 
           <p className="text-muted-foreground text-center flex items-center gap-2">
-            © 2025 Subodh Kumar Sahu | Designed & Developed with{' '}
-            <Heart className="h-4 w-4 text-accent fill-accent inline" /> using React + Vite
+            © 2025 Subodh Kumar Sahu | Crafted with precision • Deployed with care{' '}
+            <TrendingUp className="h-4 w-4 text-accent fill-accent inline" /> 
           </p>
         </div>
       </div>
