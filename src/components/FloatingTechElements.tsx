@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Code2, Terminal, Cpu, Database, Cloud, GitBranch, Braces, Binary } from 'lucide-react';
+import { Code2, Terminal, Cpu, Database, Cloud, GitBranch, Braces, Binary, Folder, CloudCog, Shield, Bug, Wrench, Server, Hammer, Activity, Key, Eye } from 'lucide-react';
 
 interface FloatingElement {
   id: number;
@@ -15,7 +15,7 @@ interface FloatingElement {
 const FloatingTechElements = () => {
   const [elements, setElements] = useState<FloatingElement[]>([]);
 
-  const icons = [Code2, Terminal, Cpu, Database, Cloud, GitBranch, Braces, Binary];
+  const icons = [Code2, Terminal, Cpu, Database, Cloud, GitBranch, Braces, Binary, Folder, CloudCog,Shield, Bug, Wrench,Server, Hammer, Activity, Key, Eye];
 
   useEffect(() => {
     const generatedElements: FloatingElement[] = Array.from({ length: 15 }, (_, i) => ({
@@ -69,7 +69,7 @@ const FloatingTechElements = () => {
       <div className="absolute top-1/2 right-10 opacity-15 text-primary font-mono text-sm animate-float" style={{ animationDuration: '16s', animationDelay: '1s' }}>
         {'const tech = "awesome";'}
       </div>
-      <div className="absolute bottom-20 left-1/4 opacity-15 text-accent font-mono text-sm animate-float" style={{ animationDuration: '13s', animationDelay: '3s' }}>
+      <div className="absolute bottom-20 left-1/4 opacity-15 text-accent font-mono text-sm animate-float" style={{ animationDuration: '10s', animationDelay: '3s' }}>
         {'npm install innovation'}
       </div>
     </div>
