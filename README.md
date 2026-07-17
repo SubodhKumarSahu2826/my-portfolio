@@ -26,7 +26,7 @@ Google Cloud ☁️ | AWS | Firebase
 ---
 
 ## 🌐 Live Portfolio
-🔗 [View My Portfolio](https://your-portfolio-link.com)
+🔗 [View My Portfolio](https://my-portfolio-sigma-eight-58.vercel.app/)
 
 > ✨ “Building solutions that connect innovation with intelligence.”
 
