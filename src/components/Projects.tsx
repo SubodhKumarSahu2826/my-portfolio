@@ -20,6 +20,18 @@ const Projects = () => {
 
   // ✅ CHANGE #2: Added liveDemo and github URLs to each project
   const projects = [
+        {
+      title: 'T5-Text Summarization Model',
+      description:
+        'AI-powered text summarization web application using a fine-tuned T5 Transformer, FastAPI, and Hugging Face Transformers.',
+      tech: ['Python', 'FastAPI', 'T5 Transformer', 'PyTorch', 'Hugging Face', 'Transformers'],
+      thumbnail: '/Projects Images/T5_Text Summarizer.png',
+      // ✅ CHANGE #2a: Added live demo URL (set to null if no live demo available)
+      liveDemo: 'https://t5-text-summariser-production.up.railway.app/',
+      // ✅ CHANGE #2b: Added GitHub repository URL
+      github: 'https://github.com/SubodhKumarSahu2826/T5-Text-Summariser',
+    },
+
     {
       title: 'Job Application Portal Redesign',
       description:
@@ -49,6 +61,7 @@ const Projects = () => {
       liveDemo: 'https://beats-headphone-landing-page.vercel.app/',
       github: 'https://github.com/SubodhKumarSahu2826/Beats-Headphone-Landing-Page.git',
     },
+
     {
       title: 'AI-Based Adaptive Cyber Honeypot',
       description:
@@ -58,6 +71,7 @@ const Projects = () => {
       liveDemo: 'null',
       github: 'https://github.com/SubodhKumarSahu2826/AI_Adaptive-cyber_honeypot.git',
     },
+
     {
       title: 'Kinova Bionic Hand Control System',
       description:
@@ -87,6 +101,7 @@ const Projects = () => {
       liveDemo: null,
       github: 'https://github.com/yourusername/electricity-billing-system',
     },
+
     {
       title: 'Drug Research Platform',
       description:
@@ -96,6 +111,7 @@ const Projects = () => {
       liveDemo: 'https://protein-bind.vercel.app',
       github: 'https://github.com/SubodhKumarSahu2826/Drug-Research-Platform.git',
     },
+    
     {
       title: 'TextSavvy - Web Accessibility Extension',
       description:
