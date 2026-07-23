@@ -33,6 +33,16 @@ const Projects = () => {
     },
 
     {
+      title: 'AI-Based Adaptive Cyber Honeypot',
+      description:
+        'Dynamic threat detection system through AI-driven deception networks for enhanced cybersecurity.',
+      tech: ['Python', 'ML', 'Docker'],
+      thumbnail: '/Projects Images/CyberHoney-Pot.png',
+      liveDemo: 'null',
+      github: 'https://github.com/SubodhKumarSahu2826/AI_Adaptive-cyber_honeypot.git',
+    },
+
+    {
       title: 'Job Application Portal Redesign',
       description:
         'Streamlined job applications with dynamic filtering and resume analytics for enhanced user experience.',
@@ -62,15 +72,7 @@ const Projects = () => {
       github: 'https://github.com/SubodhKumarSahu2826/Beats-Headphone-Landing-Page.git',
     },
 
-    {
-      title: 'AI-Based Adaptive Cyber Honeypot',
-      description:
-        'Dynamic threat detection system through AI-driven deception networks for enhanced cybersecurity.',
-      tech: ['Python', 'ML', 'Docker'],
-      thumbnail: '/Projects Images/CyberHoney-Pot.png',
-      liveDemo: 'null',
-      github: 'https://github.com/SubodhKumarSahu2826/AI_Adaptive-cyber_honeypot.git',
-    },
+    
 
     {
       title: 'Kinova Bionic Hand Control System',
