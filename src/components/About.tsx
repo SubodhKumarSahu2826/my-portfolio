@@ -1,22 +1,22 @@
-import { Code2, Award, Video } from 'lucide-react';
+import { Code2, Award, BrainCircuit } from 'lucide-react';
 import profileImage from '@/assets/profile.jpeg';
 
 const About = () => {
   const highlights = [
     {
-      icon: Code2,
-      title: 'Developer',
-      description: 'Building scalable web applications',
+      icon: BrainCircuit,
+      title: 'AI/ML Engineer',
+      description: 'Building intelligent AI applications, LLMs, RAG systems & ML solutions',
     },
     {
-      icon: Video,
-      title: 'Video Editor',
-      description: 'Part-time creative content production',
+      icon: Code2,
+      title: 'Full-Stack Developer',
+      description: 'Developing scalable web applications and AI-powered platforms',
     },
     {
       icon: Award,
-      title: 'Pragmatic Innovator',
-      description: 'Transforming ideas into practical solutions',
+      title: 'AI Innovator',
+      description: 'Transforming cutting-edge AI research into real-world products',
     },
   ];
 
@@ -31,24 +31,25 @@ const About = () => {
           <div className="space-y-6 animate-fade-in order-2 md:order-1">
             <div className="flex items-start gap-4">
               <div className="relative w-24 h-auto flex-shrink-0 rounded-lg overflow-hidden border-2 border-primary/30 shadow-lg">
-                <img 
-                  src={profileImage} 
-                  alt="Subodh Kumar Sahu" 
+                <img
+                  src={profileImage}
+                  alt="Subodh Kumar Sahu"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex-1">
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  I'm a Final-year Computer Engineering student at{' '}
-                  <span className="text-primary font-semibold">Terna Engineering College</span>, driven by a passion for building scalable, secure, and intelligent digital systems that make a real impact.
+                  I'm a <span className="text-primary font-semibold">Computer Engineering Graduate</span> passionate about building production-ready AI/ML systems, intelligent applications, and scalable software solutions that solve real-world problems.
                 </p>
               </div>
             </div>
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              As a <span className="text-accent font-semibold">Web Developer and Creative Technologist</span>, I've worked on designing and developing dynamic websites and digital tools that blend innovation with functionality. Alongside that, my experience as a video editor fuels my creative side — allowing me to merge engineering precision with storytelling and design.
+              As an <span className="text-accent font-semibold">AI/ML Engineer and Full-Stack Developer</span>, I specialize in developing end-to-end AI applications by combining Machine Learning, Generative AI, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), AI Agents, and modern web technologies to build intelligent, scalable, and production-ready products.
             </p>
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              I thrive on solving real-world problems, exploring the intersection of software development, design, and user experience, and transforming ideas into powerful, practical solutions.
+              I enjoy transforming complex ideas into practical solutions by designing robust backend systems, intuitive user interfaces, and high-performance AI workflows. I continuously explore emerging AI technologies to build reliable, impactful, and user-centric applications that bridge cutting-edge research with real-world deployment.
             </p>
           </div>
 
