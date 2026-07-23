@@ -2,61 +2,73 @@ import { Code2, Braces, Server, Cloud, Database, GitBranch, Box, Cpu, Brain, Fil
 
 const Skills = () => {
   const skillCategories = [
-    {
-      category: 'Languages',
-      color: 'from-blue-500 via-indigo-500 to-purple-500',
-      bgPattern: '🔤',
-      skills: [
-        { name: 'Python', icon: FileCode, level: 90 },
-        { name: 'JavaScript', icon: Braces, level: 85 },
-        { name: 'C++', icon: Code2, level: 80 },
-      ]
-    },
-    {
-      category: 'Web Development',
-      color: 'from-cyan-500 via-teal-500 to-green-500',
-      bgPattern: '🌐',
-      skills: [
-        { name: 'React', icon: Braces, level: 90 },
-        { name: 'Node.js', icon: Server, level: 85 },
-        { name: 'Express', icon: Terminal, level: 85 },
-        { name: 'Typescript', icon: Terminal, level: 80 },
-      ]
-    },
-    {
-      category: 'Cloud & DevOps',
-      color: 'from-sky-500 via-blue-500 to-indigo-500',
-      bgPattern: '☁️',
-      skills: [
-        { name: 'Docker', icon: Box, level: 85 },
-        { name: 'Kubernetes', icon: Cloud, level: 75 },
-        { name: 'Google Cloud', icon: Cloud, level: 85 },
-        { name: 'GitHub Actions', icon: GitBranch, level: 80 },
-      ]
-    },
-    {
-      category: 'AI & Machine Learning',
-      color: 'from-orange-500 via-red-500 to-pink-500',
-      bgPattern: '🤖',
-      skills: [
-        { name: 'TensorFlow', icon: Brain, level: 80 },
-        { name: 'Scikit-learn', icon: Cpu, level: 85 },
-        { name: 'PyTorch', icon: Brain, level: 75 },
-        { name: 'LLM', icon: Cpu, level: 82 },
-      ]
-    },
-    {
-      category: 'Database',
-      color: 'from-emerald-500 via-green-500 to-lime-500',
-      bgPattern: '💾',
-      skills: [
-        { name: 'Firebase', icon: Database, level: 80 },
-        { name: 'MongoDB', icon: Database, level: 85 },
-        { name: 'MySQL', icon: Database, level: 88 },
-        { name: 'PostgreSQL', icon: Database, level: 85 },
-      ]
-    },
-  ];
+  {
+    category: 'AI & Machine Learning',
+    color: 'from-orange-500 via-red-500 to-pink-500',
+    bgPattern: '🤖',
+    skills: [
+      { name: 'PyTorch', icon: Brain, level: 90 },
+      { name: 'Scikit-learn', icon: Cpu, level: 88 },
+      { name: 'LangChain', icon: Brain, level: 90 },
+      { name: 'LLMs', icon: Cpu, level: 88 },
+    ]
+  },
+  {
+    category: 'Backend Development',
+    color: 'from-cyan-500 via-teal-500 to-green-500',
+    bgPattern: '⚙️',
+    skills: [
+      { name: 'FastAPI', icon: Server, level: 90 },
+      { name: 'Node.js', icon: Server, level: 88 },
+      { name: 'Express.js', icon: Terminal, level: 88 },
+      { name: 'REST APIs', icon: Zap, level: 90 },
+    ]
+  },
+  {
+    category: 'Frontend Development',
+    color: 'from-blue-500 via-indigo-500 to-purple-500',
+    bgPattern: '💻',
+    skills: [
+      { name: 'React', icon: Braces, level: 90 },
+      { name: 'TypeScript', icon: Terminal, level: 85 },
+      { name: 'Tailwind CSS', icon: Braces, level: 90 },
+      { name: 'Vite', icon: Zap, level: 85 },
+    ]
+  },
+  {
+    category: 'Cloud & DevOps',
+    color: 'from-sky-500 via-blue-500 to-indigo-500',
+    bgPattern: '☁️',
+    skills: [
+      { name: 'Docker', icon: Box, level: 88 },
+      { name: 'AWS EC2', icon: Cloud, level: 85 },
+      { name: 'Nginx', icon: Server, level: 82 },
+      { name: 'Git', icon: GitBranch, level: 92 },
+    ]
+  },
+  {
+    category: 'Databases',
+    color: 'from-emerald-500 via-green-500 to-lime-500',
+    bgPattern: '💾',
+    skills: [
+      { name: 'PostgreSQL', icon: Database, level: 88 },
+      { name: 'MongoDB', icon: Database, level: 90 },
+      { name: 'MySQL', icon: Database, level: 88 },
+      { name: 'Qdrant', icon: Database, level: 85 },
+    ]
+  },
+  {
+    category: 'Programming Languages',
+    color: 'from-violet-500 via-fuchsia-500 to-pink-500',
+    bgPattern: '🔤',
+    skills: [
+      { name: 'Python', icon: FileCode, level: 92 },
+      { name: 'JavaScript', icon: Braces, level: 88 },
+      { name: 'TypeScript', icon: Terminal, level: 85 },
+      { name: 'C++', icon: Code2, level: 82 },
+    ]
+  },
+];
 
   return (
     <section id="skills" className="py-20 px-4 relative overflow-hidden">
