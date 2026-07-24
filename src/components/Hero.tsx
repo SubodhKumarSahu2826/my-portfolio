@@ -5,7 +5,7 @@ import XIcon from '@/components/ui/x-icon';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
-  const roles = ['Web Developer', 'DevOps Engineer', 'ML Enthusiast', 'Open Source Contributor'];
+  const roles = ['AI/ML Developer', 'Full Stack Developer', 'Generative AI Developer', 'Software Engineer', 'LLM & RAG Developer'];
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
