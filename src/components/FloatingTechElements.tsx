@@ -1,5 +1,22 @@
 import { useEffect, useState } from 'react';
-import { Code2, Terminal, Cpu, Database, Cloud, GitBranch, Braces, Binary, Folder, CloudCog, Shield, Bug, Wrench, Server, Hammer, Activity, Key, Eye } from 'lucide-react';
+import { BrainCircuit,
+  Bot,
+  Cpu,
+  Network,
+  Workflow,
+  Database,
+  Binary,
+  Sparkles,
+  Blocks,
+  FileJson,
+  ScanSearch,
+  Orbit,
+  Server,
+  Cloud,
+  GitBranch,
+  Code2,
+  Braces,
+  Terminal, } from 'lucide-react';
 
 interface FloatingElement {
   id: number;
@@ -15,7 +32,24 @@ interface FloatingElement {
 const FloatingTechElements = () => {
   const [elements, setElements] = useState<FloatingElement[]>([]);
 
-  const icons = [Code2, Terminal, Cpu, Database, Cloud, GitBranch, Braces, Binary, Folder, CloudCog,Shield, Bug, Wrench,Server, Hammer, Activity, Key, Eye];
+  const icons = [BrainCircuit,
+  Bot,
+  Cpu,
+  Network,
+  Workflow,
+  Database,
+  Binary,
+  Sparkles,
+  Blocks,
+  FileJson,
+  ScanSearch,
+  Orbit,
+  Server,
+  Cloud,
+  GitBranch,
+  Code2,
+  Braces,
+  Terminal,];
 
   useEffect(() => {
     const generatedElements: FloatingElement[] = Array.from({ length: 15 }, (_, i) => ({
