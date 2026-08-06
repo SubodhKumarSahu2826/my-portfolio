@@ -63,10 +63,11 @@ const Skills = () => {
     color: 'from-violet-500 via-fuchsia-500 to-pink-500',
     bgPattern: '🔤',
     skills: [
-      { name: 'Python', icon: FileCode, level: 92 },
-      { name: 'JavaScript', icon: Braces, level: 88 },
-      { name: 'TypeScript', icon: Terminal, level: 85 },
-      { name: 'C++', icon: Code2, level: 82 },
+      { name: 'Python', icon: FileCode, level: 90 },
+      { name: 'C++', icon: Code2, level: 87 },
+      { name: 'JavaScript', icon: Braces, level: 80 },
+      { name: 'TypeScript', icon: Terminal, level: 75 },
+      
     ]
   },
 ];
