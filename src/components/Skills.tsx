@@ -1,4 +1,4 @@
-import { Code2, Braces, Server, Cloud, Database, GitBranch, Box, Cpu, Brain, FileCode, Terminal, Zap } from 'lucide-react';
+import { Code2, Braces, Server, Cloud, Database, GitBranch, Box, Cpu, Brain, FileCode, Terminal, Zap, Infinity } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -44,6 +44,7 @@ const Skills = () => {
       { name: 'AWS EC2', icon: Cloud, level: 85 },
       { name: 'Nginx', icon: Server, level: 82 },
       { name: 'Git', icon: GitBranch, level: 92 },
+      { name: 'GitHub Actions', icon: Infinity, level: 80 },
     ]
   },
   {
